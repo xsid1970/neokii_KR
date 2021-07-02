@@ -61,48 +61,13 @@ class CarInterface(CarInterfaceBase):
 
     ret.steerRatio = 17.2
     ret.steerActuatorDelay = 0.0
-    ret.steerLimitTimer = 2.0
+    ret.steerLimitTimer = 3.0
     ret.steerRateCost = 0.552
     ret.steerMaxBP = [0.]
-    ret.steerMaxV = [1.5]
+    ret.steerMaxV = [2.0]
 
     # longitudinal
-#    ret.longitudinalTuning.kpBP = [0, 10. * CV.KPH_TO_MS, 20. * CV.KPH_TO_MS, 40. * CV.KPH_TO_MS, 70. * CV.KPH_TO_MS, 100. * CV.KPH_TO_MS, 130. * CV.KPH_TO_MS]
-#    ret.longitudinalTuning.kpV = [0.95, 0.75, 0.57, 0.45, 0.4, 0.34, 0.25]
-#    ret.longitudinalTuning.kiBP = [0.]
-#    ret.longitudinalTuning.kiV = [0.015]
-#    ret.longitudinalTuning.kf = 0.9
-#    ret.longitudinalTuning.deadzoneBP = [0., 100. * CV.KPH_TO_MS]
-#    ret.longitudinalTuning.deadzoneV = [0., 0.015]
 
-#    ret.gasMaxBP = [0., 10. * CV.KPH_TO_MS, 20. * CV.KPH_TO_MS, 70. * CV.KPH_TO_MS, 130. * CV.KPH_TO_MS]
-#    ret.gasMaxV = [0.43, 0.3, 0.22, 0.14, 0.11]
-
-#    ret.brakeMaxBP = [0, 70. * CV.KPH_TO_MS, 130. * CV.KPH_TO_MS]
-#    ret.brakeMaxV = [1.35, 1.3, 1.]
-
-#    ret.stoppingBrakeRate = 0.15  # brake_travel/s while trying to stop
-#    ret.startingBrakeRate = 1.0  # brake_travel/s while releasing on restart
-#    ret.startAccel = 1.3
-
-#    ret.longitudinalTuning.kpBP = [0., 15. * CV.KPH_TO_MS, 35. * CV.KPH_TO_MS, 50. * CV.KPH_TO_MS, 55. * CV.KPH_TO_MS, 70. * CV.KPH_TO_MS, 100. * CV.KPH_TO_MS]
-#    ret.longitudinalTuning.kpV = [0.61, 0.6651, 0.6742, 0.63251, 0.455, 0.45, 0.45]
-#    ret.longitudinalTuning.kiBP = [0., 126.*CV.KPH_TO_MS]
-#    ret.longitudinalTuning.kiV = [0.013, 0.02]
-#    ret.longitudinalTuning.kf = 0.5
-#    ret.longitudinalTuning.deadzoneBP = [0., 50.*CV.KPH_TO_MS, 100.*CV.KPH_TO_MS]
-#    ret.longitudinalTuning.deadzoneV = [0., 0., 0.015]
-
-#    ret.gasMaxBP = [0., 5.*CV.KPH_TO_MS, 10.*CV.KPH_TO_MS, 30.*CV.KPH_TO_MS, 36.*CV.KPH_TO_MS, 37.*CV.KPH_TO_MS, 48.*CV.KPH_TO_MS, 55.*CV.KPH_TO_MS, 70.*CV.KPH_TO_MS, 100.*CV.KPH_TO_MS]
-#    ret.gasMaxV = [0.1, 0.442, 0.564, 0.546, 0.418, 0.374, 0.1804, 0.13, 0.12, 0.1] 
-#    ret.brakeMaxBP = [0., 10.*CV.KPH_TO_MS, 29.*CV.KPH_TO_MS, 30.*CV.KPH_TO_MS, 50*CV.KPH_TO_MS, 65*CV.KPH_TO_MS]
-#    ret.brakeMaxV = [0.22, 0.55324, 0.84868, 0.85068, 0.84579, 0.8377]
-
-#    ret.stoppingBrakeRate = 0.155  # brake_travel/s while trying to stop
-#    ret.startingBrakeRate = 0.99  # brake_travel/s while releasing on restart
-#    ret.startAccel = 1.1
-
-    # BOXKON Longcontrol Params - For Fusion
     
     ret.longitudinalTuning.kpBP = [0, 10. * CV.KPH_TO_MS, 20. * CV.KPH_TO_MS, 40. * CV.KPH_TO_MS, 70. * CV.KPH_TO_MS, 100. * CV.KPH_TO_MS, 130. * CV.KPH_TO_MS]
     ret.longitudinalTuning.kpV = [0.67, 0.65, 0.65, 0.5, 0.38, 0.32, 0.20]
