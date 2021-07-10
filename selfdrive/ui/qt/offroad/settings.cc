@@ -481,8 +481,8 @@ QWidget * community_panel() {
                                             ));
   toggles_list->addWidget(horizontal_line());
   toggles_list->addWidget(new ParamControl("EmptyScreen",
-                                            "화면 비우기",
-                                            "화면 좌우의 정보를 제거합니다.",
+                                            "화면 보이기",
+                                            "화면 좌우의 정보를 표시합니다.",
                                             "../assets/offroad/icon_shell.png"
                                             ));
   toggles_list->addWidget(horizontal_line());
