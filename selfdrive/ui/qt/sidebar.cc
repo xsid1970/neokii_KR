@@ -79,7 +79,7 @@ void Sidebar::updateState(const UIState &s) {
   QColor pandaStatus = good_color;
   if (s.scene.pandaType == cereal::PandaState::PandaType::UNKNOWN) {
     pandaStatus = danger_color;
-    pandaStr = "판다\n연결 안됨";
+    pandaStr = "판다\n연결안됨";
   } else if (Hardware::TICI() && s.scene.started) {
     pandaStr = QString("SATS %1\nACC %2").arg(s.scene.satelliteCount).arg(fmin(10, s.scene.gpsAccuracy), 0, 'f', 2);
     pandaStatus = sm["liveLocationKalman"].getLiveLocationKalman().getGpsOK() ? good_color : warning_color;
