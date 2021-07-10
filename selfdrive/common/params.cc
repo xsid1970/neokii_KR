@@ -240,7 +240,10 @@ std::unordered_map<std::string, uint32_t> keys = {
     {"SccSmootherSyncGasPressed", PERSISTENT},
     {"FuseWithStockScc", PERSISTENT},
     {"ShowDebugUI", PERSISTENT},
+    {"EmptyScreen", PERSISTENT}, // 스크린 비우기
     {"CustomLeadMark", PERSISTENT},
+    {"PutPrebuiltOn", PERSISTENT}, //프리빌트 온오프
+    {"GpsOff", PERSISTENT}, //GPS 오프 화이트판다 지원용
 };
 
 } // namespace

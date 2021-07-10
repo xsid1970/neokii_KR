@@ -51,8 +51,11 @@ def manager_init():
     ("SccSmootherSlowOnCurves", "0"),
     ("SccSmootherSyncGasPressed", "0"),
     ("ShowDebugUI", "0"),
+	("EmptyScreen", "0"),
     ("FuseWithStockScc", "1"),
-    ("CustomLeadMark", "0")
+    ("CustomLeadMark", "0"),
+    ("PutPrebuiltOn", "0"), # 프리빌트 온오프
+    ("GpsOff", "0") # Gps 오프 - 화이트판다 지원용
   ]
   if not PC:
     default_params.append(("LastUpdateTime", datetime.datetime.utcnow().isoformat().encode('utf8')))
@@ -111,6 +114,7 @@ def manager_init():
   crash.bind_extra(dirty=dirty, origin=origin, branch=branch, commit=commit,
                    device=HARDWARE.get_device_type())
 
+  os.system("/data/openpilot/gitcommit.sh") # 깃관련
 
 def manager_prepare():
   for p in managed_processes.values():
